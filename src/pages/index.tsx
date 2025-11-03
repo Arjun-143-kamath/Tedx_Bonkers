@@ -120,7 +120,7 @@ export default function Maintenance() {
         .fg {
           display: flex;
           flex-direction: column;
-          gap: 0.5rem;
+          gap: 0.3rem;
           align-items: center;
           z-index: 2;
           position: relative;
@@ -136,13 +136,13 @@ export default function Maintenance() {
 
         .text-overlay {
           background: rgba(0, 0, 0, 0.55);
-          padding: 3rem 2rem;
+          padding: 3rem 3rem;
           border-radius: 20px;
           backdrop-filter: blur(6px);
           z-index: 2;
           position: relative;
           max-width: 800px;
-          margin-top: 4rem;
+          margin-top: 2.5rem;
           text-align: center;
           pointer-events: none;
           box-shadow:
@@ -154,43 +154,32 @@ export default function Maintenance() {
 
         .main-title,
         .cooking-text {
-          pointer-events: auto;
+          font-family: "Helvetica", "Poppins", "Arial Black", Arial, sans-serif;
+          text-transform: uppercase;
+          pointer-events: none;
         }
 
         .main-title {
-          font-size: 4rem;
-          font-weight: 900;
+          font-size: 3.8rem;
+          font-weight: 800;
           color: #eb0028;
-          margin-bottom: 2rem;
           letter-spacing: 2px;
-          text-transform: uppercase;
-          font-family: "Arial Black", Arial, sans-serif;
-          position: relative;
-          z-index: 3;
+          margin-bottom: 0.5rem;
         }
 
         .cooking-text {
-          color: #ffdedeff;
-          font-size: 2rem;
-          font-weight: 700 !important;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          color: #e8e8e8;
+          font-size: 1.3rem;
+          font-weight: 400;
           letter-spacing: 1px;
-          text-transform: uppercase;
-          font-family: "Arial Black", "Arial", sans-serif;
-          position: relative;
-          z-index: 5;
         }
 
         @media (max-width: 768px) {
           .main-title {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
           }
           .cooking-text {
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
           }
           .text-overlay {
             margin-top: 2rem;
@@ -204,13 +193,10 @@ export default function Maintenance() {
 
         @media (max-width: 480px) {
           .main-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.7rem;
           }
           .cooking-text {
-            font-size: 1.1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
           }
           .text-overlay {
             margin-top: 1.5rem;
