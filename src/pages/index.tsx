@@ -60,12 +60,12 @@ export default function Maintenance() {
         }}
       >
         <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+          // colors={["#ff0000ff", "#e00e0eff", "#e94d4dff"]}
           mouseForce={20}
-          cursorSize={100}
+          cursorSize={180}
           isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
+          viscous={35}
+          iterationsViscous={42}
           iterationsPoisson={32}
           resolution={0.5}
           isBounce={false}
